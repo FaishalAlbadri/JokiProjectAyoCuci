@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".ui.AboutUsActivity">
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_back_arrow"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:paddingLeft="8dp"
+        android:text="About Us"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_back"
+        app:layout_constraintLeft_toRightOf="@+id/btn_back"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_back" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_back">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#d9d9d9"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/textlogo" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:lineSpacingExtra="4dp"
+                        android:text="@string/detail_app" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center"
+                        android:text="Version: 1.0"
+                        android:textSize="11sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="16dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#d9d9d9"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/txt_developer"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Developed By :"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/img_faishal"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_developer" />
+
+                    <TextView
+                        android:id="@+id/txt_faishal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="8dp"
+                        android:maxLines="1"
+                        android:text="Muhammad Yoga Kurniawan"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/txt_nim_faishal"
+                        app:layout_constraintLeft_toRightOf="@+id/img_faishal"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/img_faishal" />
+
+                    <TextView
+                        android:id="@+id/txt_nim_faishal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="20523227"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toTopOf="@+id/txt_status_faishal"
+                        app:layout_constraintLeft_toLeftOf="@+id/txt_faishal"
+                        app:layout_constraintRight_toRightOf="@+id/txt_faishal"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_faishal" />
+
+                    <TextView
+                        android:id="@+id/txt_status_faishal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="Ketua Tim - Android Developer"
+                        android:textColor="@android:color/black"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/img_faishal"
+                        app:layout_constraintLeft_toLeftOf="@+id/txt_faishal"
+                        app:layout_constraintRight_toRightOf="@+id/txt_faishal"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_nim_faishal" />
+
+                    <View
+                        android:id="@+id/faishal"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:background="#1AFFFFFF"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/img_faishal" />
+
+                    <ImageView
+                        android:id="@+id/img_rizan"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/faishal" />
+
+                    <TextView
+                        android:id="@+id/txt_rizan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="8dp"
+                        android:maxLines="1"
+                        android:text="Hanif Rahmat Hakim"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/txt_nim_rizan"
+                        app:layout_constraintLeft_toRightOf="@+id/img_rizan"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/img_rizan" />
+
+                    <TextView
+                        android:id="@+id/txt_nim_rizan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="20523036"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toTopOf="@+id/txt_status_rizan"
+                        app:layout_constraintLeft_toLeftOf="@+id/txt_rizan"
+                        app:layout_constraintRight_toRightOf="@+id/txt_rizan"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_rizan" />
+
+                    <TextView
+                        android:id="@+id/txt_status_rizan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="Anggota - Backend Developer"
+                        android:textColor="@android:color/black"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/img_rizan"
+                        app:layout_constraintLeft_toLeftOf="@+id/txt_rizan"
+                        app:layout_constraintRight_toRightOf="@+id/txt_rizan"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_nim_rizan" />
+
+                    <View
+                        android:id="@+id/rizan"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:background="#1AFFFFFF"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/img_rizan" />
+
+                    <ImageView
+                        android:id="@+id/img_raffry"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/rizan" />
+
+                    <TextView
+                        android:id="@+id/txt_raffry"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="8dp"
+                        android:maxLines="1"
+                        android:text="Lalam Fathonah Fadhillah"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/txt_nim_raffry"
+                        app:layout_constraintLeft_toRightOf="@+id/img_raffry"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/img_raffry" />
+
+                    <TextView
+                        android:id="@+id/txt_nim_raffry"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="20523233"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toTopOf="@+id/txt_status_raffry"
+                        app:layout_constraintLeft_toLeftOf="@+id/txt_raffry"
+                        app:layout_constraintRight_toRightOf="@+id/txt_raffry"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_raffry" />
+
+                    <TextView
+                        android:id="@+id/txt_status_raffry"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="Anggota - Designer"
+                        android:textColor="@android:color/black"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/img_raffry"
+                        app:layout_constraintLeft_toLeftOf="@+id/txt_raffry"
+                        app:layout_constraintRight_toRightOf="@+id/txt_raffry"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_nim_raffry" />
+
+                    <View
+                        android:id="@+id/raffry"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginRight="8dp"
+                        android:background="#1AFFFFFF"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/img_raffry" />
+
+                    <ImageView
+                        android:id="@+id/img_ijal"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/raffry" />
+
+                    <TextView
+                        android:id="@+id/txt_ijal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="8dp"
+                        android:maxLines="1"
+                        android:text="Dwi Candra Yovan Rindho"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toTopOf="@+id/txt_nim_ijal"
+                        app:layout_constraintLeft_toRightOf="@+id/img_ijal"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/img_ijal" />
+
+                    <TextView
+                        android:id="@+id/txt_nim_ijal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="20523236"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toTopOf="@+id/txt_status_ijal"
+                        app:layout_constraintLeft_toLeftOf="@+id/txt_ijal"
+                        app:layout_constraintRight_toRightOf="@+id/txt_ijal"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_ijal" />
+
+                    <TextView
+                        android:id="@+id/txt_status_ijal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="Anggota - Designer"
+                        android:textColor="@android:color/black"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/img_ijal"
+                        app:layout_constraintLeft_toLeftOf="@+id/txt_ijal"
+                        app:layout_constraintRight_toRightOf="@+id/txt_ijal"
+                        app:layout_constraintTop_toBottomOf="@+id/txt_nim_ijal" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

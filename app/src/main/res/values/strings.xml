@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Ayo Cuci</string>
+    <string name="button_not_register">Tidak memiliki akun? <font color='red'>Daftar Sekarang</font></string>
+    <string name="after_register">Sudah memiliki akun? <font color='red'>Login Sekarang</font></string>
+    <string name="username">Username</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="after_forgot">Jika Lupa Password?<font color='red'>Forgot Password</font></string>
+    <string name="detail_app">Sebuah aplikasi yang membantu anda untuk membantu memesan atau booking jadwal cuci kendaraan anda seperti mobil atau motor, maupun aksesoris seperti helm dan karpet</string>
+
+    <string-array name="jenis_service_mobil">
+        <item>Steam - Cuci Manual | Rp35.000</item>
+        <item>Steam - Cuci Manual Hidrolik | Rp50.000</item>
+        <item>Steam - Cuci Mesin Otomatis | Rp80.000</item>
+        <item>Steam - Cuci Robotic | Rp100.000</item>
+    </string-array>
+
+    <string-array name="jenis_service_helm">
+        <item>Express 1 jam | Rp50.000</item>
+        <item>Regular 2 jam | Rp55.000</item>
+    </string-array>
+
+    <string-array name="jenis_service_karpet">
+        <item>Karpet Tipis | Rp30.000</item>
+        <item>Karpet Standar | Rp40.000</item>
+        <item>Karpet Medium | Rp45.000</item>
+        <item>Karpet Super | Rp60.000</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
